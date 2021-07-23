@@ -1,1 +1,44 @@
 worker: node c.js
+const Discord = require("discord.js");
+const Client = new Discord.Client();
+
+
+
+
+
+Client.login('ODY3OTM3ODc1NjY3MzI1MDE4.YPoYIw.mUFDO3MHyKOKmpTmMDwkpvU-LoY');
+
+
+
+ Client.on('ready',  () => {
+  console.log('=================');
+  console.log('ARCHITECT ABOD');
+  console.log('=================');
+  console.log(`logged in as * [ " ${client.user.username} " ] SERVERS! [ " ${client.guilds.size}`);
+  console.log('=================');
+  console.log('Bot is on!');
+  console.log('=================');
+Client.user.setStatus("dnd");
+});
+
+// Playing
+Client.on('ready', () => {
+Client.user.setGame(`^HELP | BY ARCHITECT ABOD `,{type: 'PLAYING https://discord.gg/CSaKNWkf'});
+});
+
+
+
+//Help command
+Client.on('message', message => {
+  if (message.content === "help") {
+message.author.send(""+ `  **
+
+| THANK YOU
+
+| FOR HELP ^Help
+
+| THIS BOT BY ARCHITECT ABOD
+
+**`);
+    }
+});
